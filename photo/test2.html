@@ -1,0 +1,389 @@
+<html>
+ 
+ <head>
+    <meta charset="utf-8">
+   <link rel='icon' href='imgs/title.ico ' type=‘image/x-ico’ /> 
+   <title>图片集</title>
+   <style type="text/css">/*ä¯ÀÀÆ÷¼æÈÝÎÊÌâ*/
+       *{margin:0px; padding:0px;}
+       #lister{/*width:100%;*/width: 1080px; margin:0px auto/*自动左右对齐*/ 0px; display: flex;flex-wrap:wrap;padding-top: 105px;}
+       .grid{width:220px;flex:1;min-height:100px; padding:15px 10px;margin:20px 10px;        
+         background: #fff; /*cssÈÃºÐ×Ó³ÉÒõÓ°£¬ÓÐÁ¢Ìå¸Ð*/}
+       .imgholder{position:relative;overflow: hidden; /*×÷Îª²ÎÕÕÎï*/}
+       .my{position:absolute;z-index:10;/*¶¨Î»*/bottom:20px;right:5px;background:rgba(0,0,0,0.7);padding:2px 10px 5px;
+         color:#fff; border-radius:15px 0px 15px 0px;}
+       .my span{font-size:26px; font-family:georgia,serif; padding:0px 5px;}
+       .biaoqian{width:220px;height:30px;/* border-bottom:1px solid #000; width:220px;*/margin:10px 0px;}
+       .you{font-size:15px;}
+       .you.p{height:10px;}
+       .grid img{
+        transition: all 0.3s;
+       }
+       .grid:hover  img{
+        transform:scale(1.3);
+       }
+        #header{
+        width:100%;
+        height:75px;
+        background:#fff;
+        position:fixed;         
+        z-index: 1000;
+      }
+       .head{ 
+      min-width:1180px;
+      margin-left: 100px;
+      height: 75px;
+      background: #fff;
+      position:fixed; 
+      z-index: 1000;
+    }
+    .menu{
+      float:right;
+    }
+    .head ul{
+      margin: 15px auto;
+      /*padding:20px auto;*/
+      display: inline-block;
+
+    }
+        .list li a{
+            line-height: 50px;
+      height: 60px;
+      font-size: 18px;
+      width: 90px;
+      display: block;
+      color: #333;
+      text-align: center;
+      text-decoration: none;
+        }
+        .head ul li a:hover{
+          color:red;
+          border-bottom: 2px solid red; 
+        }
+    .head ul li{
+      /*margin:20px 30px;*/
+      display: inline-block;
+      /*font-size:20px;*/
+    } 
+    body{
+      background: url("imgs/back.jpg");
+    }
+   </style>
+ </head>
+
+ <body>
+     <div id="header">
+        <div class="head">
+      <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+      <div class="menu">
+        <ul class="list">
+          <li >
+            <a href="index.html">首页</a>
+          </li>
+          <li>
+            <a href="test1.html" target="_self">浏览</a>
+          </li>
+          <li>
+            <a href="test3.html">全屏</a>
+          </li>
+          <li>
+            <a href="test2.html" target="_self">图片集</a>
+          </li>
+          <li>
+            <a href="test4.html">导航</a>
+          </li>
+          <li>
+            <a href="test5.html">关于</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+   <div id="lister">
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/1.jpg" alt="图片1" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">流星雨的夜<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/2.jpg" alt="图片2" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">刀剑神域<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/3.jpg" alt="图片3" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">浮空之城<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/4.jpg" alt="图片4" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">p站画师pixiv的画  魅力的画<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/5.jpg" alt="图片5" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">美丽的海边风景<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/6.jpg" alt="图片6" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">p过的美丽的海边风景<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/7.jpg" alt="图片7" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">莲花灯<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/8.jpg" alt="图片8" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">炫彩空间<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/9.jpg" alt="图片9" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">诗词  相思<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/10.jpg" alt="图片10" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">熊猫娃娃<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/11.jpg" alt="图片11" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">搞笑小明<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/12.jpg" alt="图片12" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">中二病也要谈恋爱<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/13.jpg" alt="图片13" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">搞笑小明<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/14.jpg" alt="图片14" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">龙之谷<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/15.jpg" alt="图片15" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">兰博基尼<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/16.jpg" alt="图片16" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">立夏<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/17.jpg" alt="图片17" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">路在何方<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/18.jpg" alt="图片18" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">极品飞车18：宿敌<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/19.jpg" alt="图片19" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">lol英雄联盟<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/20.jpg" alt="图片20" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">高丽风情 阿狸<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/21.jpg" alt="21" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">冠军之刃 瑞雯<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/22.jpg" alt="22" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">你若盛开 清风自来<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/23.jpg" alt="图片23" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">在爱情里 陪伴与懂得跟重要<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/24.jpg" alt="图片24" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">黄昏城市<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/25.jpg" alt="图片25" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">被p过的黄昏城市<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/26.jpg" alt="图片26" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">星空宇宙<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/27.jpg" alt="图片27" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">小明：愿岁月静好，时光不老<hr /></p>
+         </div>
+      </div>
+      <div class="grid">
+         <div class="imgholder">
+             <!--Í¼Æ¬ËÄÒªËØ-->
+             <img src="imgs/28.jpg" alt="图片28" width="220"/>
+             <p class="my"><span>12</span>张</p>
+         </div>
+         <div class="biaoqian">
+             <p class="you">天空与浮岛<hr /></p>
+         </div>
+      </div>
+      
+   </div>
+   <!-- divÊÇÒ»¸öºÐ×ÓÑùÊ½µÄ¶«Î÷¡£-->   
+   
+ </body>
+
+</html>

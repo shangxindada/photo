@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel='icon' href='imgs/title.ico ' type=‘image/x-ico’ /> 
+	<title>上心图片站</title>
+	<style style="text/css">
+	    *{
+	    	margin:0;
+	    	padding:0;
+            list-style-type: none;
+	    }
+	    body{
+	    	background:#E6E6E6;
+	    }
+	    #header{
+	    	width:100%;
+	    	height:75px;
+	    	background:#fff;
+	    	position:fixed; 	    	
+	    	z-index: 1000;
+	    }
+		.head{ 
+			min-width:1180px;
+			margin-left: 100px;
+			height: 75px;
+			background: #fff;
+			position:fixed; 
+		}
+		.menu{
+			float:right;
+		}
+		.head ul{
+			margin: 15px auto;
+			/*padding:30px 90px;*/
+			display: inline-block;
+
+		}
+        .list li a{
+            line-height: 50px;
+			height: 60px;
+			font-size: 18px;
+			width: 90px;
+			display: block;
+			color: #333;
+			text-align: center;
+			text-decoration: none;
+        }
+        .head ul li a:hover{
+        	color:red;
+        	border-bottom: 2px solid red; 
+        }
+		.head ul li{
+			/*margin:20px 30px;*/
+			display: inline-block;
+			/*font-size:20px;*/
+		} 
+		#mid{
+			/*margin-top: 90px;*/
+			background: #339DDC url(imgs/21.jpg) no-repeat center top;
+			padding-top: 90px;
+			height:400px;
+			/*width:100%;*/
+		}
+		/*#mid img{
+			/*z-index: 10;*/
+			/*height:400px;
+			width:100%;
+			z-index: 10;
+		}*/
+		.content{
+			width:1000px;
+			height: 1000px;
+			margin:-40px auto 0;
+			background:rgb(255,255,0);
+			box-shadow: 0 3px 10px #8D8DA1;
+			border-bottom: solid 1px #ddd;
+			position: relative;
+			z-index: 1px;
+		}
+		.tabs{ 
+			float: left; 
+			width: 150px;
+			height: 100%;
+			background: #fff;
+		}
+		.tab-content{
+			z-index: 1;
+			position:absolute;
+			top:0px;
+			right:0px; 
+			width: 85%;
+			height: 100%;
+		}
+		.tabs ul li{
+			padding:10px 10px 5px;
+		}
+		.text{
+			margin:30px 30px;
+			width:790px;
+			height:940px;
+			background:#fff;
+			position:absolute;
+			z-index: 100;
+		}
+		#bottom{
+			background: #22262A;
+			color: #bbb;
+			padding: 20px;
+			font-size: 12px;
+			text-align: center;
+			width: 100%;
+			margin-top: 30px;
+		}
+		.menu1{
+			background:#4897DD;
+		}
+		.menu2{
+			background:#4897DD;
+		}
+		.menu3{
+			background:#4897DD;
+		}
+		.menu4{
+			background:#4897DD;
+		}
+		.menu5{
+			background:#4897DD;
+		}
+		.text-fint{
+			padding:20px 20px;
+			font-size: 24px;
+			color: #444;
+			text-align: center;
+		}
+		.text img{
+			padding-left: 130px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+		.text-font{
+			padding-left: 50px;
+			padding-right: 50px;
+			color: #444;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="head">
+			<a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+			<div class="menu">
+				<ul class="list">
+					<li >
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="test1.html" target="_self">浏览</a>
+					</li>
+					<li>
+						<a href="test3.html">全屏</a>
+					</li>
+					<li>
+						<a href="test2.html" target="_self">图片集</a>
+					</li>
+					<li>
+						<a href="test4.html">导航</a>
+					</li>
+					<li>
+						<a href="test5.html">关于</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mid">
+		<!-- <img src="imgs/21.jpg" alt="图片"> -->
+	
+	</div>
+	<div class="content">
+		<div class="tabs">
+			<ul>
+				<li class="li1"><img src="imgs/menu1.png" alt="菜单1"></li>
+				<li class="li2"><img src="imgs/menu2.png" alt="菜单2"></li>
+				<li class="li3"><img src="imgs/menu3.png" alt="菜单3"></li>
+				<li class="li4"><img src="imgs/menu4.png" alt="菜单4"></li>
+				<li class="li5"><img src="imgs/menu5.png" alt="菜单5"></li>					
+			</ul>
+		</div>
+		<div class="tab-content menu1">
+			<div class="text">
+				<p class="text-fint">查看图片</p>
+				<br>
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查看图片及浏览菜单，里面是一个图片列表。</p>
+				<img src="imgs/text1-1.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这个列表里面的图片可以进行点击，点击过后就会呈现出这张图片的大图，并可以点击左右按钮进行切换，切换这张图的左边或右边的图，就犹如qq空间中查看相册的样子。</p>
+				<img src="imgs/text1-2.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上面的效果实现方法是，大图的图层是一直就在哪的，在点击图片过后用js的功能让大图的图层显现，点击左右按钮切换图片也是用js实现。</p>
+			</div>
+		</div>	
+		<div class="tab-content menu2">
+			<div class="text">
+				<p class="text-fint">全屏图片</p>
+				<br>
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全屏图片，这个菜单内的内容是一个全屏的图片上面一个图片菜单，全屏的图片还在不停的切换，就是一些图片在播放。</p>
+				<img src="imgs/text2-1.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这个图片菜单可以进行点击，点什么图片就会播放什么图片，边上的退出按钮点击过后菜单就会消失，当点击下面的菜单按钮是菜单就会弹出来，再点击一下就又会消失，左切换与又切换按钮也是实现了功能了的，点击过后能进行切换，中间的暂停按钮点击过后就会停止播放并把暂停按钮变成播放按钮。</p>
+				<img src="imgs/text2-2.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上述的功能是用jquery与js实现的，每个按钮获取到点击事件后都会有各自的函数进行处理。</p>
+			</div>
+		</div>
+		<div class="tab-content menu3">
+			<div class="text">
+				<p class="text-fint">图片集</p>
+				<br>
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;图片集，顾名思义就是一个个图片集，每个图片集有着这个图片集的张数，名字，第一张图片等信息。</p>
+				<img src="imgs/text3-1.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;这个图片集还有个特效当鼠标指在图片上时，图片就会放大一点。</p>
+				<img src="imgs/text3-2.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;上述的特效用的是css的一个属性：transform：scale(1.3) 这样就会放大1.3倍。</p>
+			</div>
+		</div>
+		<div class="tab-content menu4">
+			<div class="text">
+				<p class="text-fint">导航</p>
+				<br>
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;导航，我做的是图片网站所以这是个图片网站的导航，有着千图网、千库网、爱图网、天堂图片网，是个图片网站的链接，每个图片网站还可以选择它里面的分类选项。可以选择你要进的分类选项下。</p>
+				<img src="imgs/text4-1.png" alt="图片">
+				<p align="center">千图网、千库网</p>
+				<img src="imgs/text4-2.png" alt="图片">
+				<p align="center">爱图网、天堂图片网</p>
+			</div>
+		</div>
+		<div class="tab-content menu5">
+			<div class="text">
+				<p class="text-fint">关于</p>
+				<br>
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;关于主要介绍了我的一点信息</p>
+				<img src="imgs/text5-1.png" alt="图片">
+				<p class="text-font">&nbsp;&nbsp;&nbsp;&nbsp;我就是我，上善若水，心如止水。</p>
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		自己做的有很多瑕疵，谢谢观看！
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script><!-- 引入jquery.js -->
+	<script type="text/javascript">
+		$(".menu2").hide();
+		$(".menu3").hide();
+		$(".menu4").hide();
+		$(".menu5").hide();
+		//$("menu1").show();
+		$(".li1 img").click(function(){
+			$(".menu1").show();
+    		$(".menu2").hide();
+			$(".menu3").hide();
+			$(".menu4").hide();
+			$(".menu5").hide();
+		});
+		$(".li2 img").click(function(){
+			$(".menu2").show();
+    		$(".menu1").hide();
+			$(".menu3").hide();
+			$(".menu4").hide();
+			$(".menu5").hide();
+		});
+		$(".li3 img").click(function(){
+			$(".menu3").show();
+    		$(".menu2").hide();
+			$(".menu1").hide();
+			$(".menu4").hide();
+			$(".menu5").hide();
+		});
+		$(".li4 img").click(function(){
+			$(".menu4").show();
+    		$(".menu2").hide();
+			$(".menu3").hide();
+			$(".menu1").hide();
+			$(".menu5").hide();
+		});
+		$(".li5 img").click(function(){
+			$(".menu5").show();
+    		$(".menu2").hide();
+			$(".menu3").hide();
+			$(".menu4").hide();
+			$(".menu1").hide();
+		});
+	</script>
+</body>
+</html>

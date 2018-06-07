@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel='icon' href='imgs/title.ico ' type=‘image/x-ico’ />
+	<title>全屏图片</title>
+	<style type="text/css">
+	    *{
+	    	margin:0px;
+	    	padding:0px;
+	    }
+		#showImg{
+			height:100%;
+			width:100%;
+			position: absolute;/*绝对定位*/
+			overflow: hidden;/*超出部分隐藏*/
+			top:0px;
+			left:0px;
+			z-index: 1;
+		}
+		#showImg img{
+			opacity: 1;
+		}
+		#imgList{
+			width: 570px;
+			height:450px;
+			background:rgba(0,0,0,0.5);
+			position:absolute;
+			top:100px;
+			left:450px;
+			z-index: 1000;
+		}
+		#imgList .title{
+			width:570px;
+			height: 46px;
+			background:url("imgs/title.jpg");
+			color:#fff;
+			font-family: "微软雅黑";
+			font-size: 19px;
+			line-height: 46px;/*行高*/
+			text-indent:20px;/*首行缩进*/
+		}
+		#imgList .title img{
+			float:right;
+			margin-top: 10px;
+			margin-right: 10px;
+		}
+		#imgList ul{
+
+		}
+		#imgList ul li{
+			width:150px;
+			height:105px;
+			border:5px solid #fff;
+			list-style-type: none;
+			float:left;
+			margin:10px 15px;
+		}
+		#bottom{
+			height:62px;
+			width:100%;
+			position:absolute;
+			background: url("imgs/nav-bg.png");
+			bottom:0;
+			z-index: 1000;
+		}
+		.butCon{
+			width:230px;
+			height: 52px;
+			margin:0px auto;
+			padding-top: 10px;
+		}
+		#header{
+			width: 100%;
+			height: 75px;
+			background: #fff;
+			position:fixed;
+			z-index: 1000;
+		}
+		.head{ 
+			min-width:1180px;
+			margin-left: 100px;
+			height: 75px;
+			background: #fff;
+			position:fixed;
+			z-index: 1000; 
+		}
+		.menu{
+			float:right;
+		}
+		.head ul{
+			margin: 15px auto;
+			/*padding:30px 90px;*/
+			display: inline-block;
+
+		}
+        .list li a{
+            line-height: 50px;
+			height: 60px;
+			font-size: 18px;
+			width: 90px;
+			display: block;
+			color: #333;
+			text-align: center;
+			text-decoration: none;
+        }
+        .head ul li a:hover{
+        	color:red;
+        	border-bottom: 2px solid red; 
+        }
+		.head ul li{
+			/*margin:20px 30px;*/
+			display: inline-block;
+			/*font-size:20px;*/
+		} 
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+      	<div class="head">
+			<a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+			<div class="menu">
+				<ul class="list">
+					<li >
+						<a href="index.html" target="_self">首页</a>
+					</li>
+					<li>
+						<a href="test1.html" target="_self">浏览</a>
+					</li>
+					<li>
+						<a href="test3.html" target="_self">全屏</a>
+					</li>
+					<li>
+						<a href="test2.html" target="_self">图片集</a>
+					</li>
+					<li>
+						<a href="test4.html" target="_self">导航</a>
+					</li>
+					<li>
+						<a href="test5.html">关于</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <!--大图展示区-->
+	<div id="showImg">
+		<img src="imgs/1-1.jpg" alt="图片" width="100%">
+	</div>
+	<!--图片列表-->
+	<div id="imgList">
+		<div class="title">图片相册  <img class="close" src="imgs/close.png" alt="叉叉"></div>
+		<ul>
+			<li><img src="imgs/s_1.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_2.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_3.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_4.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_5.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_6.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_7.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_8.jpg" alt="图片1"></li>
+			<li><img src="imgs/s_9.jpg" alt="图片1"></li>
+		</ul>
+	</div>
+	<!--按钮部分-->
+	<div id="bottom">
+		<div class="butCon">
+			<img src="imgs/album.png" alt="菜单" class="ablum">
+			<img src="imgs/back_dull.png" alt="向左" class="left">
+			<img src="imgs/pause_dull.png" alt="播放/暂停" class="pause">
+			<img src="imgs/forward_dull.png" alt="向右" class="forward">
+		</div>
+	</div>
+	<!--引用jquery.js-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" >
+		var bimg="";
+		var aimg="";
+		var _index=0;
+		var autotime=null;
+		var mark=1;
+		var sig=1;
+	//点击关闭按钮，关闭图片列表
+		$(".title img.close").click(function(){
+    		$("#imgList").hide();
+    		sig=0;		
+		});
+	//点击菜单按钮，打开图片列表
+		$(".butCon img.ablum").click(function(){
+			if(sig==1){
+			    $("#imgList").hide();
+			    sig=0;
+			}
+			else{
+				$("#imgList").show();
+				sig=1;
+			}
+		});
+	//点击列表小图，全屏这图的大图
+		$("#imgList ul li").click(function(){
+			_index=$(this).index();
+			bimg=$(this).find("img").attr("src");
+			aimg=bimg.replace("s_","1-")
+			//css动画
+			$("#showImg img").attr("src",aimg).css("opacity",0).animate({"opacity":1},500);
+			$("#imgList").hide();
+		});
+	//点击右切换按钮
+		$(".butCon img.forward").click(function(){
+			if(mark==1){
+				clearInterval(autotime);//清除定时
+				$(".butCon img.pause").attr("src","imgs/play_dull.png");
+				mark=2;
+			}
+			_index++;
+			if(_index>8){_index=0;}
+			bimg=$("#imgList ul li").eq(_index).find("img").attr("src");
+			aimg=bimg.replace("s_","1-")
+			//css动画
+			$("#showImg img").attr("src",aimg).css("opacity",0).animate({"opacity":1},500);		
+		});
+	//点击左切换按钮
+		$(".butCon img.left").click(function(){
+			if(mark==1){
+				clearInterval(autotime);//清除定时
+				$(".butCon img.pause").attr("src","imgs/play_dull.png");
+				mark=2;
+			}
+			_index--;
+			if(_index<0){_index=8;}
+			bimg=$("#imgList ul li").eq(_index).find("img").attr("src");
+			aimg=bimg.replace("s_","1-");
+			//css动画
+			$("#showImg img").attr("src",aimg).css("opacity",0).animate({"opacity":1},500);		
+		});
+	
+	//自动播放
+
+		function autoplay(){
+			autotime=setInterval(function(){_index++;//定时
+            if(_index>8)
+            	_index=0;
+            bimg=$("#imgList ul li").eq(_index).find("img").attr("src");
+			aimg=bimg.replace("s_","1-")
+			//css动画
+			$("#showImg img").attr("src",aimg).css("opacity",0).animate({"opacity":1},500);		
+			},2000)
+            
+		}
+		autoplay();
+
+		//点击播放暂停
+		$(".butCon img.pause").click(function(){
+			//暂停
+			if(mark==1){
+				clearInterval(autotime);//清除定时
+				$(this).attr("src","imgs/play_dull.png");
+				mark=2;
+			}else{
+				autoplay();
+				$(this).attr("src","imgs/pause_dull.png");
+				mark=1;
+			}
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel='icon' href='imgs/title.ico ' type=‘image/x-ico’ /> 
+	<title>图片查看</title>
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<style type="text/css">
+	/* css样式表达式：属性：值 值；*/
+	    *{
+	    	margin:0px;
+	    	padding:0px;
+	    	list-style-type: none;
+	    }
+	    body{
+	    	background: url("imgs/112.jpg");
+	    }
+		#Main{
+              width: 900px;
+              height:2000px;
+              margin:0px auto/*自动左右对齐*/ 0px;
+              padding:105px;
+              /*background:#63508e;*/
+		}
+		#Main ul li{
+			width:260px;
+			height:170px;
+			border:3px solid #fff;
+			float:left;
+			margin:10px 15px;
+			box-shadow: 5px 5px 10px #000;/*水平偏移量 竖直偏移量 阴影半径 颜色*/
+		}
+		#Main ul li img{
+			width:260px;
+			height:170px;
+		}
+		.gray{
+			width:100%;
+			height:100%;
+			background:rgba(0,0,0,0.5);/*前三个数是rgb三色，最后一个是透明度*/
+			position: fixed;/*固定地位*/
+			left:0px;
+			top:0px;
+			display:none;/*隐藏灰色图层*/
+		}
+		.showImg{
+			width: 700px;
+			height:400px;
+			background: #000;
+			position:fixed;/*absolute绝对定位*/
+			top:100px;
+			left:300px;
+			border:10px solid #fff;
+			display: none;
+
+		}
+		.showImg img{
+            width:700px;
+            height:400px; 
+		}
+		.icon{
+			position:absolute;
+			width:60px;
+			height: 100px;
+			color:#fff;
+		}
+		.prev-left{
+			top:175px;
+			left:-60px;
+		}
+		.prev-right{
+			top:175px;
+			left:730px;
+		}
+		 #header{
+	    	width:100%;
+	    	height:75px;
+	    	background:#fff;
+	    	position:fixed; 	    	
+	    	z-index: 1000;
+	    }
+		.head{ 
+			min-width:1180px;
+			margin-left: 100px;
+			height: 75px;
+			background: #fff;
+			position:fixed; 
+		}
+		.menu{
+			float:right;
+		}
+		.head ul{
+			margin: 15px auto;
+			/*padding:30px 90px;*/
+			display: inline-block;
+
+		}
+        .list li a{
+            line-height: 50px;
+			height: 60px;
+			font-size: 18px;
+			width: 90px;
+			display: block;
+			color: #333;
+			text-align: center;
+			text-decoration: none;
+        }
+        .head ul li a:hover{
+        	color:red;
+        	border-bottom: 2px solid red; 
+        }
+		.head ul li{
+			/*margin:20px 30px;*/
+			display: inline-block;
+			/*font-size:20px;*/
+		} 
+	</style>
+</head>
+<body>
+    <div id="header">
+      	<div class="head">
+			<a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+			<div class="menu">
+				<ul class="list">
+					<li >
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="test1.html" target="_self">浏览</a>
+					</li>
+					<li>
+						<a href="test3.html">全屏</a>
+					</li>
+					<li>
+						<a href="test2.html" target="_self">图片集</a>
+					</li>
+					<li>
+						<a href="test4.html">导航</a>
+					</li>
+					<li>
+						<a href="test5.html">关于</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="Main">
+		<ul>
+        	  <li><img src="imgs/1.jpg" alt="图片"></li>
+        	  <li><img src="imgs/2.jpg" alt="图片"></li>
+        	  <li><img src="imgs/3.jpg" alt="图片"></li>
+        	  <li><img src="imgs/4.jpg" alt="图片"></li>
+        	  <li><img src="imgs/5.jpg" alt="图片"></li>
+        	  <li><img src="imgs/6.jpg" alt="图片"></li>
+        	  <li><img src="imgs/7.jpg" alt="图片"></li>
+        	  <li><img src="imgs/8.jpg" alt="图片"></li>
+        	  <li><img src="imgs/9.jpg" alt="图片"></li>
+        	  <li><img src="imgs/10.jpg" alt="图片"></li>
+        	  <li><img src="imgs/11.jpg" alt="图片"></li>
+        	  <li><img src="imgs/12.jpg" alt="图片"></li>
+        	  <li><img src="imgs/13.jpg" alt="图片"></li>
+        	  <li><img src="imgs/14.jpg" alt="图片"></li>
+        	  <li><img src="imgs/15.jpg" alt="图片"></li>
+        	  <li><img src="imgs/16.jpg" alt="图片"></li>
+        	  <li><img src="imgs/17.jpg" alt="图片"></li>
+        	  <li><img src="imgs/18.jpg" alt="图片"></li>
+        	  <li><img src="imgs/19.jpg" alt="图片"></li>
+        	  <li><img src="imgs/20.jpg" alt="图片"></li>
+        	  <li><img src="imgs/21.jpg" alt="图片"></li>
+        	  <li><img src="imgs/22.jpg" alt="图片"></li>
+        	  <li><img src="imgs/23.jpg" alt="图片"></li>
+        	  <li><img src="imgs/24.jpg" alt="图片"></li>
+        	  <li><img src="imgs/25.jpg" alt="图片"></li>
+        	  <li><img src="imgs/26.jpg" alt="图片"></li>
+        	  <li><img src="imgs/27.jpg" alt="图片"></li>
+        	  <li><img src="imgs/28.jpg" alt="图片"></li>
+        	  <li><img src="imgs/29.jpg" alt="图片"></li>  
+		</ul>
+	</div>
+	<div class="gray"></div> <!-- 半透明图层 -->
+	<div class="showImg">
+	    <img src="imgs/1.jpg" alt="图片" class="show_bimg">
+	    <i class="fa fa-angle-left icon prev-left fa-5x" ></i>
+        <i class="fa fa-angle-right icon prev-right fa-5x" ></i>
+
+	</div><!-- 大图展示区 -->
+	<!-- javascript区域 -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" >
+	    var _index=0;
+	    var bImg=null;
+		$("#Main ul li").click(function(){
+			_index=$(this).index();
+			$(".gray").show();
+			$(".showImg").show();
+			bImg=$(this).find("img").attr("src");
+			// alert(bImg);
+            $(".showImg img.show_bimg").attr("src",bImg);
+		});
+
+		$(".gray").click(function(){
+			$(".gray").hide();
+	 		$(".showImg").hide();
+		});
+
+		$(".showImg i.prev-left").click(function(){
+			_index--;
+			if(_index<0){_index=0; alert("左边没有了！");}
+			bImg=$("#Main ul li").eq(_index).find("img").attr("src");
+			$(".showImg img.show_bimg").attr("src",bImg);
+		});
+		$(".showImg i.prev-right").click(function(){
+			_index++;
+			if(_index>28){_index=28;alert("没有跟多了！");}
+			bImg=$("#Main ul li").eq(_index).find("img").attr("src");
+			$(".showImg img.show_bimg").attr("src",bImg);				
+		});
+	</script>
+</body>
+</html>
